@@ -1,0 +1,1 @@
+Modelling results, including exoplanetary bulk composition, key elemental ratios, and interior composition and structure, will be output to this folder. 
