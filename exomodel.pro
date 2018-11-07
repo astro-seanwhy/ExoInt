@@ -28,7 +28,7 @@ outputref2protosun='NO'
  
 Nelems=83
 nan=!values.f_nan
-Nsim=1e3 ;2e4 ;; the sim should be no less than 1e3 to make reasonably results; ideally, 
+Nsim=2e4 ;2e4 ;; the sim should be no less than 1e3 to make reasonably results; ideally, 
 
 if keyword_set(starlable) then print, 'Run for '+starlable
 
