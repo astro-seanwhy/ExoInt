@@ -9,7 +9,7 @@ The codes are currently written in IDL, and a Python version will be coming soon
 
 Please run the codes starting with ‘exoconstraints.pro’. 
 
-The examples that are given in the codes include the Sun, Kepler-10, Kepler-20, Kepler-21, and Kepler-100 as presented in Wang et al. 2019 (MNRAS). 
+The example star in the codes is Kepler-10 as one of cases presented in Wang et al. 2019 (MNRAS). 
  
 You may feel free to add any other stellar abundances (in dex, relative to the Sun). 
 
