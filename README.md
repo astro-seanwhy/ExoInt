@@ -24,5 +24,5 @@ The codes "exomodel.pro" and "chemsysmodel.pro" are free to download and use, bu
 
 The use of the codes or part of the codes should have the citation given to the paper mentioned above. 
 
-Questions, comments, and requests for any particular permission should be addressed to haiyang.wang@anu.edu.au
+Questions, comments, and requests for any particular permission should be addressed to haiyang.wang@anu.edu.au or haiwang@phys.ethz.ch
 
