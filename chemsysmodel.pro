@@ -7,6 +7,25 @@ TIC
 ;;Citation: Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D.,
 ;;and Lineweaver, C. H. 2019. Enhanced constraints on the interior
 ;;composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. doi.org/10.1093/mnras/sty2749
+;;;;History of updates
+;;--------7 Feb 2020 ----------
+;;1. the notion 'mantleSO2abu' has been changed to 'mantleSO3abu';
+;;just a change to the notion, rather than to the variable, since the
+;;variable had already been calculauted under the asummption of SO3
+;;2. correct the line for calculating the remaining oxygen after
+;;oxdizing C to CO2, from
+;;;    planetOleft_res2=planetOleft_res - planetabuN[nC]*3.
+;;;to
+;;;    planetOleft_res2=planetOleft_res - planetabuN[nC]*2.
+;;;And the following line
+;;;    compsabu=planetabuN[nC] + planetOleft_res2/3.
+;;;to 
+;;;    compsabu=planetabuN[nC] + planetOleft_res2/2.
+;;;As a result, subtle changes to the amounts of CO2 and eventually remaining
+;;oxygen atoms would be expected. But the changes will have no effect
+;;to the results of planet host cases in Wang et al. 2019 MNRAS, since
+;;no case has enough oxygen to oxidze C to CO2 and thus has oxygen remained. 
+;;-------------------------------
 
 Nelems=83
 nan=!values.f_nan
@@ -490,9 +509,9 @@ IF planetOleft ge total([planetabuN[nFe], planetabuN[nNi], planetabuN[nS]*3.], /
 planetOleft_res=planetOleft-total([planetabuN[nFe], planetabuN[nNi], planetabuN[nS]*3.], /nan)
 mantleFeOabu=planetabuN[nFe]
 mantleNiOabu=planetabuN[nNi]
-mantleSO2abu=planetabuN[nS]
+mantleSO3abu=planetabuN[nS]
 
-compsabu=[mantleFeOabu, mantleNiOabu, mantleSO2abu]
+compsabu=[mantleFeOabu, mantleNiOabu, mantleSO3abu]
 compswt=[atomwt[nFe]+atomwt[nO], atomwt[nNi] + atomwt[nO], atomwt[nS] + atomwt[nO]*3.]
 compsmolarmass=[compsmolarmass, compsabu*compswt]
 
@@ -500,9 +519,9 @@ compsmolarmass=[compsmolarmass, compsabu*compswt]
 compsname=[compsname, 'CO2']
 compsabu=planetabuN[nC]
 compswt=atomwt[nC] + atomwt[nO]*2.
-planetOleft_res2=planetOleft_res - planetabuN[nC]*3.
+planetOleft_res2=planetOleft_res - planetabuN[nC]*2.
 if planetOleft_res2 le 0 then begin 
-compsabu=planetabuN[nC] + planetOleft_res2/3.
+compsabu=planetabuN[nC] + planetOleft_res2/2.
 print, 'O has been used up after '
 print,  compsname
 ;;C in the form of graphite/diamond
@@ -521,7 +540,7 @@ endelse
 mantletotalmolarmass=total(compsmolarmass, /nan)
 mantlecompsmassfra=compsmolarmass/mantletotalmolarmass
 
-
+planetOleft_res2(where(planetOleft_res2 lt 0)) = 0
 print, 'A CoreLess planet!, with the leftover O atoms of', planetOleft_res2
 corecompsname=['N/A']
 corecompsmassfra=nan
