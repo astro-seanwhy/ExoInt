@@ -5,7 +5,7 @@ The codes, named “ExoInt”, are created and maintained by Haiyang S. Wang.
 
 Citation: Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D., and Lineweaver, C. H. 2019. Enhanced constraints on the interior composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. doi.org/10.1093/mnras/sty2749
 
-A modest updated version (v1.2) is available under the folder "v1.2". 
+A moderate updated version (v1.2) is available under the folder "v1.2". 
 
 The codes are currently written in IDL, and a Python version has been developed and will be online soon.
 
