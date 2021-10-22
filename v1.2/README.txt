@@ -1,4 +1,4 @@
-This "v1.2" version is a slight update to “ExoInt” that is created and maintained by Haiyang S. Wang.
+This "v1.2" version is an moderate update to “ExoInt” that is created and maintained by Haiyang S. Wang.
 The updates include:
 1. Allow silicon to be partially in the core, depending on the planet's oxidation state
 2. Final output is constrained by a P-value that reflects the modeling degeneracy of the fractionation of Fe and Ni (and light elements, e.g.Si and S) between mantle and core.
