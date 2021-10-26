@@ -9,14 +9,7 @@ A moderate updated version (v1.2) is available under the folder "v1.2".
 
 The codes are currently written in IDL, and a Python version has been developed and will be online soon.
 
-Please run the codes starting with ‘exoconstraints.pro’. 
-
-The example star in the codes is Kepler-10 as one of cases presented in Wang et al. 2019 (MNRAS). 
- 
-You may feel free to add any other stellar abundances (in dex, relative to the Sun). 
-
-The modelling results of the mantle and core composition as well as core mass fraction of potential/postulated terrestrial exoplanets in orbiting the star of your interest will be output under the folder “outputs”. 
-
+To devolatilize your sample of stellar abundances, please prepare them as differential abundances (i.e. [X/H], dex) according to the format of the example given and then place your datafiles under the folder “data”. To run the codes, simply type “idl exoconstraints.pro” (or run it with an IDL interface), and the modelling results for both the planetary bulk composition (devolatilized stellar composition) and interior compositions (mantle, core, and core mass fraction) will be automatically stored under the folder “outputs”. 
 
 Copyright@Haiyang S. Wang, with the following permissions: 
 
@@ -26,5 +19,5 @@ The codes "exomodel.pro" and "chemsysmodel.pro" are free to download and use, bu
 
 The use of the codes or part of the codes should have the citation given to the paper mentioned above. 
 
-Questions, comments, and requests for any particular permission should be addressed to haiwang@phys.ethz.ch
+Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular). 
 
