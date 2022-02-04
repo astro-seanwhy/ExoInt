@@ -985,11 +985,11 @@ val_id=where(finite(fcoremassARR) eq 1, cmf_count, /null)
 
 totalmantlestoicmassc = total(mantlestoicmassARRc, 1, /nan)
 totalcorestoicmassc = total(corestoicmassARRc, 1, /nan)
-fcoremassARRc = totalcorestoicmassc / (totalmantlestoicmassc + totalcorestoicmassc)
-cmfc_perc = make_array(3, value=nan)
+;fcoremassARRc = totalcorestoicmassc / (totalmantlestoicmassc + totalcorestoicmassc)
+;cmfc_perc = make_array(3, value=nan)
 if cmf_count ge Ncut then begin
 cmf_perc=cgpercentiles(fcoremassARR(val_id), percentiles=[0.1587, 0.5, 0.8413])
-cmfc_perc = cgpercentiles(fcoremassARRc(val_id), percentiles=[0.1587, 0.5, 0.8413])
+;cmfc_perc = cgpercentiles(fcoremassARRc(val_id), percentiles=[0.1587, 0.5, 0.8413])
 endif
 
 ;;;>>>>>>>>output the histograms for check and verification
@@ -1033,7 +1033,7 @@ cmferr_control=0.003
 ;;;--OUTPUT RESULTS---
 if starlabel eq 'earth' then result={mantlecompsname:fullcompsname, mantlecompsmassfraBEST:mantlecompsmassfraBEST,  mantle_perc:mantlecompsmassfra_perc, corecompsname:fullcorecompsname, corecompsmassfraBEST:corecompsmassfraBEST, core_perc:corecompsmassfra_perc, fcoremassBEST:fcoremassBEST, cmf_perc:cmf_perc, Nsim:Nsim, R_Nsim_m:R_Nsim_m, R_Nsim_c:R_Nsim_c, R_Nsim_cmf:R_Nsim_cmf} else $
 
-Result={mantlecompsname:fullcompsname, mantlecompsmassfraBEST:mantlecompsmassfraBEST,  mantle_perc:mantlecompsmassfra_perc, mantlec_perc:mantlecompsmassfrac_perc,  corecompsname:fullcorecompsname, corecompsmassfraBEST:corecompsmassfraBEST, core_perc:corecompsmassfra_perc, corec_perc:corecompsmassfrac_perc,  fcoremassBEST:fcoremassBEST, cmf_perc:cmf_perc, cmfc_perc:cmfc_perc, planetdex:planetdex, planetdexerr:planetdexerr, planetkeyR:planetkeyR, planetkeyRerr:planetkeyRerr, starkeyR:starkeyR, starkeyRerr:starkeyRerr, KeyRdexlable:KeyRdexlable, Nsim:Nsim, R_Nsim_m:R_Nsim_m, R_Nsim_c:R_Nsim_c, R_Nsim_cmf:R_Nsim_cmf}
+Result={mantlecompsname:fullcompsname, mantlecompsmassfraBEST:mantlecompsmassfraBEST,  mantle_perc:mantlecompsmassfra_perc, mantlec_perc:mantlecompsmassfrac_perc,  corecompsname:fullcorecompsname, corecompsmassfraBEST:corecompsmassfraBEST, core_perc:corecompsmassfra_perc, corec_perc:corecompsmassfrac_perc,  fcoremassBEST:fcoremassBEST, cmf_perc:cmf_perc, planetdex:planetdex, planetdexerr:planetdexerr, planetkeyR:planetkeyR, planetkeyRerr:planetkeyRerr, starkeyR:starkeyR, starkeyRerr:starkeyRerr, KeyRdexlable:KeyRdexlable, Nsim:Nsim, R_Nsim_m:R_Nsim_m, R_Nsim_c:R_Nsim_c, R_Nsim_cmf:R_Nsim_cmf}
 
 TOC
 return, result
