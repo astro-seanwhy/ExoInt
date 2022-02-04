@@ -506,7 +506,7 @@ ENDELSE
 END
 ENDCASE
 
-;if meanmolarmass eq 'YES' then goto, alternativemean
+
 
 ;;>>>CAL MASS FRACTIONS IN CASE OF ARRAYS
 compsmolarmass=make_array(Ncomps, Nval, value=nan)
@@ -530,77 +530,9 @@ corecompsmolarmassfrac=make_array(Ncorecomps, Nval, value=nan)
 fcoremass=make_array(Nval, value=nan)
 Rmolarmeanmass_m2c=make_array(Nval, value=nan)
 
-if meanmolarmass eq 'YES' then goto, alternativemean
+;;;if meanmolarmass eq 'YES' then goto, alternativemean
+;;;alternativemean:
 
-for i=0, Nval-1 do begin ;;here Nval >1 only
-   compsmolarmass[*,i]=compsabuarr[*,i]*compswt
-   mantletotalmolarmass[i]=total(compsmolarmass[*,i], /nan)
-   mantlecompsmassfra[*,i]=compsmolarmass[*,i]/mantletotalmolarmass[i]
-   compsmolarfra[*,i]=compsabuarr[*,i]/total(compsabuarr[*,i],/nan)
-   compsmolarmassfra[*,i]=compsmolarfra[*,i]*compswt
-   mantlemolarmeanmass[i]=total(compsmolarmassfra[*,i], /nan)
-   mantlemolarmassfrac[*,i]=compsmolarmassfra[*,i]/mantlemolarmeanmass[i]
-   
-   coremolarmass[*,i]=corecompsabuarr[*,i]*corecompswt
-   coretotalmolarmass[i]=total(coremolarmass[*,i], /nan)
-   corecompsmassfra[*,i]=coremolarmass[*,i]/coretotalmolarmass[i]
-   corecompsmolarfra[*,i]=corecompsabuarr[*,i]/total(corecompsabuarr[*,i],/nan)
-   corecompsmolarmassfra[*,i]=corecompsmolarfra[*,i]*corecompswt
-   coremolarmeanmass[i]=total(corecompsmolarmassfra[*,i], /nan)
-   corecompsmolarmassfrac[*,i]=corecompsmolarmassfra[*,i]/coremolarmeanmass[i]
-   
-   fcoremass[i] = coretotalmolarmass[i]/(coretotalmolarmass[i]+mantletotalmolarmass[i])
-   Rmolarmeanmass_m2c[i]=mantlemolarmeanmass[i]/coremolarmeanmass[i]
-endfor
-
-
-if molarfralabel eq 'YES' then begin
-mantlecompsmassfra=mantlemolarmassfrac
-corecompsmassfra=corecompsmolarmassfrac
-endif
-
-mantlecompsmassfra_mean=make_array(Ncomps, value=nan)
-corecompsmassfra_mean=make_array(Ncorecomps, value=nan)
-mantlemolarmass_mean = make_array(Ncomps, value=nan)
-coremolarmass_mean = make_array(Ncorecomps, value=nan)
-for i=0, Ncomps-1 do begin
-   val_id_m=where(finite(mantlecompsmassfra[i,*]) eq 1, m_count, /null)
-   if m_count ge 1 then  mantle_Nval[i]=1
-   mantlecompsmassfra_mean[i]=mean(mantlecompsmassfra[i,*], /nan)
-   mantlemolarmass_mean[i] = mean(compsmolarmass[i,*], /nan)    
-endfor
-
-for i=0, Ncorecomps-1 do begin
-   val_id_c=where(finite(corecompsmassfra[i,*]) eq 1, c_count, /null)
-   if c_count ge 1 then core_Nval[i]=1
-   corecompsmassfra_mean[i]=mean(corecompsmassfra[i,*], /nan)
-   coremolarmass_mean[i] = mean(coremolarmass[i,*], /nan)    
-endfor
-
-
-
-val_id_cmf=where(finite(fcoremass) eq 1, cmf_count, /null)
-if cmf_count ge 1 then cmf_Nval=1
-
-fcoremassc=mean(fcoremass) ;, /nan)
-
-;if fcoremassc lt 0.30 then stop
-
-if unimeanlable eq 'YES' then begin
-   mantlecompsmassfra=mantlecompsmassfra_mean
-   corecompsmassfra=corecompsmassfra_mean
-   fcoremass=fcoremassc
-   mantlemolarmass = mantlemolarmass_mean
-   coremolarmass = coremolarmass_mean
-   mantlemolarmeanmass=mean(mantlemolarmeanmass, /nan)
-   coremolarmeanmass=mean(coremolarmeanmass, /nan)
-   Nval=1.
-endif
-
-goto, outputresults
-
-
-alternativemean:
 for i=0, Nval-1 do begin
 compsmolarmass[*,i] = compsabuarr[*,i]*compswt
 coremolarmass[*,i] = corecompsabuarr[*,i]*corecompswt
