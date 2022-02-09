@@ -20,7 +20,7 @@ readcol, 'data/atomwttc_new.txt', F='I,A,F,F', atomid, elemid, atomwt, elemtc
 readcol, 'data/protosunwhy.txt', F='x,f,f,f', protosundex, protosundexerrup, protosundexerrdn
 readcol, 'data/PEppmwhy.txt', F='x,d,d,d', bulkearthppm, bulkearthppmerrup, bulkearthppmerrdn
 readcol, 'data/Asplund09dex.txt', F='x,x,f,f', A09solardex, A09solardexerr, skipline=3
-readcol, 'data/Asplund2020dex.txt', F='x,x,f,f', A20solardex, A20solardexerr, skipline=3
+readcol, 'data/Asplund2021dex.txt', F='x,x,f,f', A20solardex, A20solardexerr, skipline=3
 
 ;;;>>>INPUT TO-BE-DEVOLATILISED STELLAR ABUNDANCES
 ;;--Example star ([X/H], differntial abundances, by default)
