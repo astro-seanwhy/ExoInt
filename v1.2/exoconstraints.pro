@@ -37,25 +37,6 @@ solardexerr=A09solardexerr
 solardex20=A20solardex
 solardex20err=A20solardexerr 
 
-;;;;>>>>>>>>>>>>>>>>>>>>>>>>
-;;;rename indexies
-for i=0, Nelems-1 do begin
- if elemid[i] eq 'C' then nC=i
- if elemid[i] eq 'O' then nO=i
- if elemid[i] eq 'S' then nS=i
- if elemid[i] eq 'Hg' then nHg=i
- if elemid[i] eq 'Na' then nNa=i
- if elemid[i] eq 'Si' then nSi=i
- if elemid[i] eq 'Fe' then nFe=i
- if elemid[i] eq 'Mg' then nMg=i
- if elemid[i] eq 'Ca' then nCa=i
- if elemid[i] eq 'Ti' then nTi=i
- if elemid[i] eq 'Al' then nAl=i
- if elemid[i] eq 'Cr' then nCr=i
- if elemid[i] eq 'Mn' then nMn=i
- if elemid[i] eq 'Ni' then nNi=i
-endfor
-
 
 ;;;>>>>EXAMPLE
 starlabel='examstar'
