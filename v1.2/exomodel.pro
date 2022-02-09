@@ -45,7 +45,7 @@ readcol, 'data/atomwttc_new.txt', F='I,A,F,F', atomid, elemid, atomwt, elemtc
 ;readcol, 'data/protosunppmwhy.txt', F='x,d,d,d', solarppm, solarppmerrup, solarppmerrdn
 readcol, 'data/PEppmwhy.txt', F='x,d,d,d', bulkearthppm, bulkearthppmerrup, bulkearthppmerrdn
 readcol, 'data/Asplund09dex.txt', F='x,x,f,f', A09solardex, A09solardexerr, skipline=3
-readcol, 'data/Asplund2020dex.txt', F='x,x,f,f', A20solardex, A20solardexerr, skipline=3
+readcol, 'data/Asplund2021dex.txt', F='x,x,f,f', A20solardex, A20solardexerr, skipline=3
 readcol, 'data/protosunwhy.txt', F='x,f,f,f', protosundex, protosundexerrup, protosundexerrdn
 ;if protosunMgwerr eq 'YES' then readcol, 'data/protosunwhy_mg_werr.txt', F='x,f,f,f', protosundex, protosundexerrup, protosundexerrdn
 ;readcol, 'data/devolmodel_lin_pub.txt', F='x,f,f,f', ymodelN, ymodelNsdup, ymodelNsddn
