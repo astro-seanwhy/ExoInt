@@ -4,8 +4,11 @@ The updates include:
 2. Final output is constrained by a P-value that reflects the modeling degeneracy of the fractionation of Fe and Ni (and light elements, e.g.Si and S) between mantle and core.
 3. The possibility to adjust the devolatilisation levels by 3sigma or 5sigma (or their upper/lower limits)
 
-The citation should still be given to:
-Citation: Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D., and Lineweaver, C. H. 2019. Enhanced constraints on the interior composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. doi.org/10.1093/mnras/sty2749
+The primary citation should be given to:
+Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D., and Lineweaver, C. H. 2019. Enhanced constraints on the interior composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. doi.org/10.1093/mnras/sty2749
+
+Other relevant references include: 
+Wang, H. S., Lineweaver, C. H., Quanz, S. P., Mojzsis, S. J., Ireland, T. R., Sossi, P. A., Seidler, F., and Morel T. 2022. A model Earth-sized planet in the habitable zone of α Centauri A/B. ApJ, in press. https://arxiv.org/abs/2110.12565
 
 The codes are written in IDL, and a Python version has been developed and will be online as well, soon.
 
