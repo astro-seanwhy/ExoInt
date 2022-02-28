@@ -7,7 +7,7 @@ The updates include:
 The primary citation should be given to:
 Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D., and Lineweaver, C. H. 2019. Enhanced constraints on the interior composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. doi.org/10.1093/mnras/sty2749
 
-Relevant references for this update include: 
+Relevant references for this version include: 
 Wang, H. S., Lineweaver, C. H., Quanz, S. P., Mojzsis, S. J., Ireland, T. R., Sossi, P. A., Seidler, F., and Morel T. 2022. A model Earth-sized planet in the habitable zone of α Centauri A/B. ApJ, in press. https://arxiv.org/abs/2110.12565
 
 The codes are written in IDL, and a Python version has been developed and will be online as well, soon.
@@ -27,4 +27,4 @@ The codes "exomodel.pro" and "chemsysmodel.pro" are free to download and use, bu
 
 The use of any part of the codes should have the citation given to the paper mentioned above.
 
-Questions, comments, and requests for any particular permission should be addressed to haiwang@ethz.ch.
+Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular).
