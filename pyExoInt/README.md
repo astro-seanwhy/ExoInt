@@ -1,3 +1,4 @@
+# pyExoInt
 pyExoInt is a python version of ExoInt_v1.2 (IDL) -- A devolatilization and interior modeling package for rocky planets, which is created and maintained by Haiyang S. Wang (HSW) and is copyrighted with the GNU GPLv3 open-acess license.
 
 Disclaimer: The python version is contributed by Fabian Seidler, under the guidance of HSW. It is not guaranteed to be identical to the IDL version, but it contains all the main features of the original code and may be useful to users who are more familiar with the Python language.
