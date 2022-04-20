@@ -5,7 +5,7 @@ The updates include:
 2. Final output is constrained by a P-value that reflects the modeling degeneracy of the fractionation of Fe and Ni (and light elements, e.g. Si and S) between mantle and core.
 3. The possibility to adjust the devolatilisation levels by 3sigma or 5sigma (or their upper/lower limits)
 
-The codes are developed in IDL, and a Python version (corresponds to this v1.2 version) has also been available here https://github.com/astro-seanwhy/ExoInt/tree/master/pyExoInt 
+The codes are developed in IDL, and a Python version (corresponds to this v1.2 version) has also been available at https://github.com/astro-seanwhy/ExoInt/tree/master/pyExoInt 
 
 Please run the codes starting with ‘exoconstraints.pro’.
 An example has been given on how to implement the code.
