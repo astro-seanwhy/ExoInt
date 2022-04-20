@@ -2,7 +2,7 @@
 This "v1.2" version is a moderate update to “ExoInt” that is created and maintained by Haiyang S. Wang.
 The updates include:
 1. Allow silicon to be partially in the core, depending on the planet's oxidation state
-2. Final output is constrained by a P-value that reflects the modeling degeneracy of the fractionation of Fe and Ni (and light elements, e.g.Si and S) between mantle and core.
+2. Final output is constrained by a P-value that reflects the modeling degeneracy of the fractionation of Fe and Ni (and light elements, e.g. Si and S) between mantle and core.
 3. The possibility to adjust the devolatilisation levels by 3sigma or 5sigma (or their upper/lower limits)
 
 The codes are developed in IDL, and a Python version (corresponds to this v1.2 version) has also been available here https://github.com/astro-seanwhy/ExoInt/tree/master/pyExoInt 
