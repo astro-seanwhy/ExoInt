@@ -9,7 +9,7 @@ PRO exoconstraints
 
 TIC
 cgCleanup ;;This procedure cleans-up and/or destroys any open graphics or widget windows on the display.
-outpath='outputs/'
+outpath='output/'
 ;;;>>>>>>>KEYS SET UP
 COTcCorrectlable='YES'
 solarHgCorrectlable='YES'
