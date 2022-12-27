@@ -67,9 +67,9 @@ goto, outputresults ;; this line is useful for outputing results individually fo
 
 ;;>>output
 outputresults:
-;print, 'Output UNCONSTRAINED (RAW) results to files for '+starlabel
-;writecol, outpath+starlabel+'_mantlecomp_raw.txt', Result.mantlecompsname, Result.mantlecompsmassfraBEST, Result.mantle_perc[*,0], Result.mantle_perc[*,1], Result.mantle_perc[*,2], Result.R_Nsim_m, fmt='(A, F, F, F, F, F)'
-;writecol, outpath+starlabel+'_corecomp_raw.txt',  Result.corecompsname, Result.corecompsmassfraBEST, Result.core_perc[*, 0], Result.core_perc[*, 1], Result.core_perc[*, 2], Result.R_Nsim_c, fmt='(A,  F, F, F, F, F)' 
+;;print, 'Output UNCONSTRAINED (RAW) results to files for '+starlabel
+;;writecol, outpath+starlabel+'_mantlecomp_raw.txt', Result.mantlecompsname, Result.mantlecompsmassfraBEST, Result.mantle_perc[*,0], Result.mantle_perc[*,1], Result.mantle_perc[*,2], Result.R_Nsim_m, fmt='(A, F, F, F, F, F)'
+;;writecol, outpath+starlabel+'_corecomp_raw.txt',  Result.corecompsname, Result.corecompsmassfraBEST, Result.core_perc[*, 0], Result.core_perc[*, 1], Result.core_perc[*, 2], Result.R_Nsim_c, fmt='(A,  F, F, F, F, F)' 
 
 
 print, 'Output CONSTRAINED (FINAL) results to files for '+starlabel
