@@ -16,8 +16,8 @@ cgCleanup ;;This procedure cleans-up and/or destroys any open graphics or widget
 set_plot, 'x'
 endif
 
-outpath='outputs/'
-if gcelabel eq 'YES' then outpath='outputs_gce/'
+outpath='output/'
+;;if gcelabel eq 'YES' then outpath='outputs_gce/'
 
 if keyword_set(starlabel) then print, 'Run for '+starlabel
 ;othersign=''
