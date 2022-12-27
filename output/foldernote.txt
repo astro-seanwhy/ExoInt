@@ -1,0 +1,1 @@
+Modelling results, including exoplanetary bulk composition, key elemental ratios, mantle and core composition, as well as core mass fraction, will be output to this folder. 
