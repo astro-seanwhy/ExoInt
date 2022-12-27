@@ -8,7 +8,7 @@ PRO exoconstraints ;;THE ONLY PART OF THE CODES THAT YOU NEED TO RUN OR MODIFY
 
 TIC
 ;cgCleanup ;;This procedure will invoke X-WINDOW to clean-up and/or destroy any open graphics or widget windows on the display.
-outpath='outputs/'
+outpath='output/'
 
 ;;;>>>>>>>KEYS SET-UP
 
