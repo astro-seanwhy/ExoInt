@@ -80,14 +80,14 @@ corec_per50 = Result.corec_perc[*,1]/total(Result.corec_perc[*,1], /nan) ;;; nor
 corec_errup = (Result.corec_perc[*,2] - Result.corec_perc[*,1])/Result.corec_perc[*,1]*corec_per50 
 corec_errdn = (Result.corec_perc[*,1] - Result.corec_perc[*,0])/Result.corec_perc[*,1]*corec_per50 
 
-writecol, outpath+starlabel+'_mantlecomp_final.txt', Result.mantlecompsname, mantlec_per50, mantlec_errup, mantlec_errdn, fmt='(A, F, F, F)'
-writecol, outpath+starlabel+'_corecomp_final.txt',  Result.corecompsname, corec_per50, corec_errup, corec_errdn, fmt='(A, F, F, F)' 
+writecol, outpath+starlabel+'exoE_mantlecomp_final.txt', Result.mantlecompsname, mantlec_per50, mantlec_errup, mantlec_errdn, fmt='(A, F, F, F)'
+writecol, outpath+starlabel+'exoE_corecomp_final.txt',  Result.corecompsname, corec_per50, corec_errup, corec_errdn, fmt='(A, F, F, F)' 
 
 print, 'Output CMF to file for '+starlabel
 cmf_per50 = Result.cmf_perc[1]
 cmf_per50_errup = Result.cmf_perc[2] - cmf_per50
 cmf_per50_errdn = cmf_per50 - Result.cmf_perc[0]
-writecol, outpath+starlabel+'_fcoremass_final.txt',  cmf_per50, cmf_per50_errup, cmf_per50_errdn, fmt='(F,F, F)'
+writecol, outpath+starlabel+'exoE_fcoremass_final.txt',  cmf_per50, cmf_per50_errup, cmf_per50_errdn, fmt='(F,F, F)'
 
 ;if starlable ne 'examstar' then goto, yourstar ;;; This line is used for calling for your sample of stars and may be replicated accordingly.
 
