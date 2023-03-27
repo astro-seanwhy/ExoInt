@@ -1,0 +1,13 @@
+
+This version of PerPlex is 6.8.9, the binary and data files of which are distributed here under the courtesy of James Connolly. They are compiled on a Linux system. 
+
+The source codes of this version (along with other versions) can be found at https://perplex.ethz.ch/Perple_X_Sources_691/ as well as https://github.com/jadconnolly/Perple_X. 
+
+If you would like to use this version on a different system (e.g., MAC or Windows) or adopt any recent versions, please follow the instruction of Perple_x, https://www.perplex.ethz.ch/ , to obtain the relevant files to compile them on your system. We unfortunately cannot offer direct help on compiling Perplex.  
+
+
+---Licence ------
+The source codes of PerPlex are distributed under the licence of GNU General Public License v3.0, as according to https://github.com/ondrolexa/Perple_X 
+
+---Disclaimer---
+We have not made any change to the binary and data files of the 6.8.9 version of PerPlex. Hence, we have been entitled to adopt different licences, which are even stronger copyleft liences, for our own modules of the (py)ExoInt programme.
