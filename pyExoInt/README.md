@@ -41,4 +41,4 @@ Wang, H. S., Linweaver, C. H., Quanz, S. P., Mojzsis, S. J., Ireland, T. R., Sos
 
 
 Contact:
-Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular).
+Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@ethz.ch (for requests, in particular).
