@@ -1,1 +1,3 @@
 
+Your Monte Carlo simulation files will be automatically placed here, under the folders of YourCaseName, which will be created automatically as well. 
+You do not need to do anything here. 
