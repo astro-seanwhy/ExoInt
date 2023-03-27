@@ -7,6 +7,8 @@ The updates include:
 
 The codes are developed in IDL, and a Python version (corresponds to this v1.2 version) has also been available at https://github.com/astro-seanwhy/ExoInt/tree/master/pyExoInt 
 
+The 'Mineral' moduel has been added to output the mineralogy based on the stoichemitric output of mantle and core compositions, core mass fraction, along with the given mass and radius information.
+
 Please run the codes starting with ‘exoconstraints.pro’.
 An example has been given on how to implement the code.
 
