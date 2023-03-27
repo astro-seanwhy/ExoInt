@@ -28,6 +28,7 @@ The final results are stored in the "output" folder, and are named by the filena
 In addition, three seperated files -- ...mantlecomp_final.txt, corecomp_final.txt, and fcoremass_final.txt -- are also generated, which may be called for the subsequent mineral modellling through the code "Mineral" (read further instructions there) 
 
 ------------------- Citations ----------------------
+
 The primary citation should be given to:
 
 Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D., and Lineweaver, C. H. 2019. Enhanced constraints on the interior composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. doi.org/10.1093/mnras/sty2749
