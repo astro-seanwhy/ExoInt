@@ -3,9 +3,7 @@ pyExoInt is a python version of ExoInt_v1.2 (IDL) -- A devolatilization and inte
 Disclaimer: 
 """
 The python version is not be guaranteed to be identical to the IDL version of the original ExoInt_v1.2, but it contains all the main features of the original code and may be useful to users who are more familiar with the Python language.
-
 It was co-developed by Haiyang S. Wang and Fabian L. Seidler @ 2021-2022.
-
 It has been further modified and maintained by Haiyang S. Wang @ 2022-2023.
 """
 
