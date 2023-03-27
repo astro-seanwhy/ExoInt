@@ -24,7 +24,8 @@ readcol, 'data/Asplund2021dex.txt', F='x,x,f,f', A20solardex, A20solardexerr, sk
 
 ;;;>>>INPUT TO-BE-DEVOLATILISED STELLAR ABUNDANCES
 ;;--Example star ([X/H], differntial abundances, by default)
-readcol, 'data/examstar_XH.txt', F='A,f,f,f', elemid, examstardex, examstardexerrup, examstardexerrdn, skipline=1
+readcol, 'data/stellar_abu/abu_examplestar1.txt', F='A,f,f', elemid, examstar1dex, examstar1dexerr, skipline=1  ;;symmetric errors
+readcol, 'data/stellar_abu/abu_examplestar2.txt', F='x,f,f,f', examstar2dex, examstar2dexerr, examstar2dexerrdn, skipline=1  ;;asymmetric errors
 
 ;;;>>process invalid values
 A09solardex(where(A09solardex eq -11))=nan
@@ -39,10 +40,10 @@ solardex20err=A20solardexerr
 
 
 ;;;>>>>EXAMPLE
-starlabel='examstar'
-stardiff=examstardex
-stardifferr=examstardexerrup
-stardifferrdn=examstardexerrdn ;;The parameter for the lower error bar is retained, in case that it is different from the upper error bar
+starlabel='examplestar1'
+stardiff=examstar1dex
+stardifferr=examstar1dexerr
+stardifferrdn=examstar1dexerr ;;The parameter for the lower error bar is retained, in case that it is different from the upper error bar
 Result=exomodel(stardiff, stardifferr, stardifferrdn, starlabel=starlabel, /withreferr, /residual_add, /quick) ;;/xplot, /F3sig, /F5sig, /upperlmt, /lowerlmt)
 ;;;/withreferr: a key (recommended to use) to determine if the errors of the reference solar abundances will be added in quadrature with your input (differential) stellar abundances.
 ;;;/residual_add: an optional key to determine if the residuals of the devolatilisation model will be added to the devolatilised stellar abundances to obtain the final planetary bulk composition (It is only recommended to use if it is to compare with the Earth value of Wang et al. 2018 for an acccurate comparison; it does not matter if the comparisions are among extrasolar planet cases only).
@@ -53,6 +54,14 @@ Result=exomodel(stardiff, stardifferr, stardifferrdn, starlabel=starlabel, /with
 ;;;/upperlmt, /lowerlmt (if set simultaneously, lowerlmt is activated) -- when /F3sig or /F5sig is set, you can also choose to only apply either the upper or lower limit to devolatilise your stars only of the applied devolatilisation trend (this may be useful for doing some limit tests)
 
 goto, outputresults ;; this line is useful for outputing results individually for multiple samples of stars. 
+
+examplestar2:
+starlabel='examplestar2'
+stardiff=examstar2dex
+stardifferr=examstar2dexerr
+stardifferrdn=examstar2dexerrdn ;;The parameter for the lower error bar is retained, in case that it is different from the upper error bar
+Result=exomodel(stardiff, stardifferr, stardifferrdn, starlabel=starlabel, /withreferr, /residual_add, /quick) 
+goto, outputresults
 
 ;;;>>>RUN FOR YOUR STARS
 ;youstar:
@@ -89,8 +98,8 @@ cmf_per50_errup = Result.cmf_perc[2] - cmf_per50
 cmf_per50_errdn = cmf_per50 - Result.cmf_perc[0]
 writecol, outpath+starlabel+'exoE_fcoremass_final.txt',  cmf_per50, cmf_per50_errup, cmf_per50_errdn, fmt='(F,F, F)'
 
-;if starlable ne 'examstar' then goto, yourstar ;;; This line is used for calling for your sample of stars and may be replicated accordingly.
-
+if starlabel eq 'examplestar1' then goto, examplestar1 ;;run to the 2nd example star
+;if starlabel eq 'examplestar2' then goto, yourstar ;;; This line is used for calling for your sample of stars and may be replicated accordingly.
 
 
 ;stop;---------------------------
