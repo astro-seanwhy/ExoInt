@@ -13,7 +13,7 @@ First, please place your mass and radius data for your case studies in the 'MRfi
 [Please note that only R will be used as the input and a modelled mass will be generated, which you can compare with your actual data to gauge the modelling accuracy/degeneracy]
 
 There are three steps to run the module: 'quick' (i.e. mean mineralogy; mineral_quick_solver.py) -> 'MCstep1' (MC simulation to assess and illustrate the mineralogy uncertainty; mineral_MC_solver_step1.py) -> 'MCstep2' (Illustrate the mineralogy uncertainty; mineral_MC_solver_step2.py). 
-The three steps can be run in sequence (following the order above), manually one by one. You can do so by typing "python3 xxx.py MRfiles/MR_example.csv", for example. 
+These three steps can be run in sequence (following the order above), manually one by one. You can do so by typing "python3 xxx.py MRfiles/MR_example.csv", for example. 
 They can also be run in streamline, with the code 'mineral_OneGo.py'. You can do so similarly, "python3 xxx.py MRfiles/MR_example.csv". Please refer to "Instructions" embedded in 'mineral_OneGo.py' for further details. 
 [Please note that the codes, including 'mineral_OneGo.py', can also be run within 'ipython3', in which please type "run xxx.py MRfiles/MR_example.csv")
 
@@ -22,18 +22,20 @@ They can also be run in streamline, with the code 'mineral_OneGo.py'. You can do
 The mineralogy results icluding illustrations are stored in the "mineral_output" folder, in the following formats:
 mineralogy_YourCaseName_exoE.txt (data for mean mineralogy)
 mineralogy_YourCaseName_exoE.pdf (figure for mean mineralogy)
-runpara_R_M_YourCaseName_exoE.txt (key input/output parameters, R, M, and CRF, for mean mineralogy
+runpara_R_M_YourCaseName_exoE.txt (key input/output parameters, e.g. R, M, and CRF, for mean mineralogy
 mineralogy_YourCaseName_exoE_MC_eval.csv (data for MC mineralogy at 50th, 16th and 84th percentiles)
 mineralogy_YourCaseName_exoE_MC_eval.pdf (figure for MC uncertainty assessment)
 
 Please also note that the mineralogy data for each MC simulation are stored in the subdirectory "MC_files" and further in the individual folders of YourCaseName.
 
 ---IMPORTANT ------ 
-The module, as provided, has only be tested on a Linux system; and PerPlex version 6.8.9 (https://github.com/ondrolexa/Perple_X/tree/main/src) was used, the binary and data files of which were compiled on Linux as well. If you would like to run the module on a different system (e.g., MAC or Windows), please follow the instruction of Perple_x, https://www.perplex.ethz.ch/ , to obtain the relevant files to be compiled on your system. We unfortunately cannot offer direct help on compiling Perplex.  
+The module, as provided, has only be tested on a Linux system; and PerPlex version 6.8.9 (https://perplex.ethz.ch/Perple_X_Sources_691/) was used, the binary and data files of which were compiled on Linux as well and provided under the Utilities/PerPlex folder. 
+If you would like to run the module on a different system (e.g., MAC or Windows) or adopt a different version of Perple_X, please follow their instructions, https://www.perplex.ethz.ch/ , to obtain the relevant files to be compiled on your system. We unfortunately cannot offer direct help on compiling Perplex.  
 
 
 ---Licence ------
-This program is distributed as free software, under the terms of the GNU Affero General Public License as published by the Free Software Foundation, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
+This program is distributed as free software, under the terms of the GNU Affero General Public License as published by the Free Software Foundation, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 You are also particularly welcome to make full requests and contribute to the further development of the free software. 
 
