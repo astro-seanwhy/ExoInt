@@ -17,7 +17,7 @@ To devolatilize your sample of stellar abundances, please prepare them as differ
 
 ---Licence ---
 
-The free programme is distributed under the GNU GPLv3 open-acess license (unless otherwise specified for some modules), in the hope that it will be useful.
+The free programme is distributed under the GNU GPLv3 open-acess license (unless otherwise specified for some modules), in the hope that it will be useful, but WITHOUT guarantee.
 
 You are particularly welcome to make pull requests and contribute to the further development of the programme. 
 
