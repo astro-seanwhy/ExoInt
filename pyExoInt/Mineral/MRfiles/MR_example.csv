@@ -1,0 +1,5 @@
+##Please formulate your MR data in this format and in the Earth unit; please note that only R will be used as the input and a modelled mass will be generated, which you can compare with your actual data to gauge the modelling accuracy/degeneracy.
+planet              R       Rerr        M       Merr
+examplestar1_exoE   1.0     0.1        nan      nan
+examplestar2_exoE   0.5     0.1        nan      nan
+examplestar3_exoE   1.5     0.1        nan      nan
