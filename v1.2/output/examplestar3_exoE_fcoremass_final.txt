@@ -1,0 +1,2 @@
+param   median  errup   errdn
+CMF      0.3841805      0.0472211      0.0515257
