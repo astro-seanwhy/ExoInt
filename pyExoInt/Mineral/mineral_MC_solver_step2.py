@@ -112,7 +112,7 @@ for sname in planet_labels:
             if name in df.keys():
                 f = interp1d(R, df[name], fill_value=float("nan"), bounds_error=False)
                 cut = np.argmin(abs(radii-R[0])) + 1
-                array[i, :cut] = NP.NAN 
+                array[i, :cut] = np.nan 
                 array[i, cut:] = f(radii[cut:])
                     
     
