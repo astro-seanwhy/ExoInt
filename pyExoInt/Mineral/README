@@ -1,6 +1,6 @@
 The 'Mineral' module of pyExoInt -- a python version of ExoInt_v1.2 (IDL) -- is streamlined with the stoicmetric compositional output, along with the given mass/radius to compute mineralogy by calling PerPlex (https://www.perplex.ethz.ch/). 
 
-Copyright @ Haiyang S. Wang and Fabian Seidler, ETH Zurich
+Copyright @ Haiyang S. Wang and Fabian L. Seidler, ETH Zurich
 
 History:
 """
