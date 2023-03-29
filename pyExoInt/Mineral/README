@@ -1,4 +1,4 @@
-The 'Mineral' module of pyExoInt -- a python version of ExoInt_v1.2 (IDL) -- is streamlined with the stoicmetric compositional output, along with the given mass/radius to compute mineralogy by calling PerPlex (https://www.perplex.ethz.ch/). 
+The 'Mineral' module of pyExoInt -- a python version of ExoInt_v1.2 (IDL) -- is streamlined with the stoichiometric compositional output, along with the given mass/radius to compute mineralogy by calling PerPlex (https://www.perplex.ethz.ch/). 
 
 Copyright @ Haiyang S. Wang and Fabian L. Seidler, ETH Zurich
 
@@ -42,7 +42,7 @@ You are also particularly welcome to make full requests and contribute to the fu
 ------------------- Citations ----------------------
 Relevant references for this module: 
 Wang, H. S., Quanz, S. P., Yong, D., Liu, F., Seidler, F., Acuna, L., Mojzsis, S. J. 2022. Detailed chemical compositions of planet hosting stars: II. Exploration of the interiors of terrestrial-type exoplanets. MNRAS 513:5829-5846. https://doi.org/10.1093/mnras/stac1119 
-Wang, H. S., Linweaver, C. H., Quanz, S. P., Mojzsis, S. J., Ireland, T. R., Sossi, P. A., Seidler, F., and Morel, T. 2022. A model Earth-sized planet in the habitable zone of α Centauri A/B. ApJ 927:134. https://doi.org/10.3847/1538-4357/ac4e8c
+Wang, H. S., Lineweaver, C. H., Quanz, S. P., Mojzsis, S. J., Ireland, T. R., Sossi, P. A., Seidler, F., and Morel, T. 2022. A model Earth-sized planet in the habitable zone of α Centauri A/B. ApJ 927:134. https://doi.org/10.3847/1538-4357/ac4e8c
 
 Contact:
 Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular).
