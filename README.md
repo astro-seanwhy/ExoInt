@@ -1,5 +1,5 @@
 # ExoInt
-Rocky planets as devolatilized stars (Source codes for Wang et al. 2019, MNRAS, doi.org/10.1093/mnras/sty2749). Purpose: devolatilize stellar abundances to produce rocky exoplanetary bulk composition, which is used togegther with mass/radius information to the exoplanetary interior structure and mineralogy. 
+Rocky planets as devolatilized stars (Source codes for Wang et al. 2019, MNRAS, doi.org/10.1093/mnras/sty2749). Purpose: devolatilize stellar abundances to produce rocky exoplanetary bulk composition, which is used togegther with mass/radius information to model the exoplanetary interior structure and mineralogy. 
 
 The codes, named “ExoInt”, are created and maintained by Haiyang S. Wang, Copyright @ 2019-2023. 
 
