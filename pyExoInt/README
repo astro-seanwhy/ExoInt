@@ -18,7 +18,7 @@ To run pyExoInt, start with 'exoconstraints.py', which calls the function 'exomo
 
 ----output ------
 The final results are stored in the "output" folder, and are named by the filename of the input stellar abundances, followed with suffixes '_results.csv' and '_results_formated.txt' -- i.e. two different files with identical results.
-In addition, three seperated files -- ...mantlecomp_final.txt, corecomp_final.txt, and fcoremass_final.txt -- are also generated, which may be called for the subsequent mineral modellling through the code "Mineral" (read further instructions there) 
+In addition, four seperated files -- ...bulkcomp_final.txt, ...mantlecomp_final.txt, corecomp_final.txt, and fcoremass_final.txt -- are also generated, which may be called for the subsequent mineral modellling through the code "Mineral" (read further instructions there) 
 
 ------------------- Citations ----------------------
 The primary citation should be given to:
