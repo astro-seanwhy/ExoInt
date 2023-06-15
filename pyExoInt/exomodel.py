@@ -260,6 +260,11 @@ def exomodel(
     CMF_dfc = CMF_df / 100. ##normalise to 1
     CMF_dfc.to_csv(outdir + filename + '_exoE_fcoremass_final.txt', sep='\t')
     #breakpoint()
+    
+    ##output estimated planetary abundance
+    dl = {'elem':elemid, 'abu(Al=100)':np.array(planetabuN.values()), 'abu_errup':np.array(planetabuNerrup.values()), 'abu_errdn':np.array(planetabuNerrdn.values())}
+    planetabu_df = pandas.DataFrame(dl)
+    planetabu_df.to_csv(outdir + filename + '_exoE_bulkcomp_final.txt', sep='\t')
     # ===================== FINISH ===========================#
 
     print("\nDone.\n")
