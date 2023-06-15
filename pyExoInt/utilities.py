@@ -79,11 +79,6 @@ def produce_planetabuN(stardex, stardexerr, stardexerrdn, refsolar='A21'):
     atomwt=np.asarray(tmp['atwt'])
     elemtc=np.asarray(tmp['50%Tc'])
 
-    tmp = Table.read('data/protosunppmwhy.txt', format='ascii')
-    solarppm=np.asarray(tmp['abu/ppm'])
-    solarppmerrup=np.asarray(tmp['abuerrup/ppm'])
-    solarppmerrdn=np.asarray(tmp['abuerrdn/ppm'])
-
     tmp = Table.read('data/PEppmwhy.txt', format='ascii')
     bulkearthppm=np.asarray(tmp['abu/ppm'])
     bulkearthppmerrup=np.asarray(tmp['errUP/ppm'])
