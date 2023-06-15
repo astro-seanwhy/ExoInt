@@ -32,9 +32,9 @@ def chemsysmodel(planetabuN, verbose=False, Si_in_core=True, Nmc=1e5):
     Nmc = int(Nmc)
 
     #============== chemcial network setup ==============#
-    mantle = {'Na2O':np.nan, 'CaO':np.nan, 'MgO':np.nan, 'Al2O3':np.nan, 'SiO2':np.nan, 'FeO':np.nan, 'NiO':np.nan, 'SO3':np.nan, 'CO2':np.nan, 'C':np.nan, 'metals':np.nan, 'remaining O':np.nan}
-    mantle_Nval = {'Na2O':np.nan, 'CaO':np.nan, 'MgO':np.nan, 'Al2O3':np.nan, 'SiO2':np.nan, 'FeO':np.nan, 'NiO':np.nan, 'SO3':np.nan, 'CO2':np.nan, 'C':np.nan, 'metals':np.nan, 'remaining O':np.nan}
-
+    mantle = {'Na2O':np.nan, 'CaO':np.nan, 'MgO':np.nan, 'Al2O3':np.nan, 'SiO2':np.nan, 'FeO':np.nan, 'NiO':np.nan, 'SO3':np.nan, 'CO2':np.nan, 'C':np.nan, 'Metals':np.nan, 'ExtraO':np.nan}
+    mantle_Nval = {'Na2O':np.nan, 'CaO':np.nan, 'MgO':np.nan, 'Al2O3':np.nan, 'SiO2':np.nan, 'FeO':np.nan, 'NiO':np.nan, 'SO3':np.nan, 'CO2':np.nan, 'C':np.nan, 'Metals':np.nan, 'ExtraO':np.nan}
+    
     if Si_in_core == True:
         core = {'Fe':np.nan, 'Ni':np.nan, 'S':np.nan, 'Si':np.nan}
         core_Nval = {'Fe':np.nan, 'Ni':np.nan, 'S':np.nan, 'Si':np.nan}
