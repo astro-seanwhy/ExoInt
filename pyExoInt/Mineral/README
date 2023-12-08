@@ -33,6 +33,16 @@ The module, as provided, has only be tested on a Linux system; and PerPlex versi
 If you would like to run the module on a different system (e.g., MAC or Windows) or adopt a different version of Perple_X, please follow their instructions, https://www.perplex.ethz.ch/ , to obtain the relevant files to be compiled on your system. We unfortunately cannot offer direct help on compiling Perplex.  
 
 
+---Solutions to Error Reports ---
+The following error has been reported in some cases while running the Mineral codes:
+"pexpect.exceptions.EOF: End Of File (EOF)"
+
+This error has been found to be due to the character limit of the path name set by PerPlex. If this happens to you, two by-pass solutions can be sought:
+(1) Simply put the "Mineral" folder under your home path, e.g., /home/[your username]/Mineral/, which should have avoided the EOF error. But to make this work, you also need to redirect the calling path of the stoichemtric interior compositions (i.e., the first-layer output of pyExoInt) to where the stoichemtric output is located.
+(2) Alterantively (and if preferred), put the whole pyExoInt under your home path, i.e., /home/[your username]/pyExoInt/. This shall solve the EOF error directly. 
+
+A root-cause-solution, native to the setup of PerPlex, remains to be found. You're very welcome to contribute, in case that you have found one and are interested in sharing it. 
+
 ---Licence ------
 This program is distributed as free software, under the terms of the GNU Affero General Public License as published by the Free Software Foundation, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
