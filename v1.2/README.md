@@ -29,8 +29,6 @@ Copyright@Haiyang S. Wang, with the following permissions:
 
 The code "exoconstraints.pro" is free to download, use and modify, should it be for academic and non-profit purpose.
 
-The codes "exomodel.pro" and "chemsysmodel.pro" are free to download and use, but not allowed to modify (except for choosing different keywords if necessary) without the permission of Haiyang S. Wang.
-
-The use of any part of the codes should have the citation given to the papers mentioned above.
+The codes "exomodel.pro" and "chemsysmodel.pro" are free to download and use, but in case of an interest in modifying them (allowed though), it's recommended to first contact the developler, Haiyang S. Wang, to ensure the development consistency.
 
 Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular).
