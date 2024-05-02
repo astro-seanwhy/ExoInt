@@ -31,5 +31,5 @@ For using the 'Mineral' module, please refer to the IDL v1.2 version or the pyEx
 
 ---Contact---
 
-Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@ethz.ch (for requests, in particular). 
+Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiyang.wang@sund.ku.dk or haiwang@ethz.ch (for requests, in particular). 
 
