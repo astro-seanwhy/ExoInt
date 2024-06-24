@@ -14,8 +14,8 @@ On 24 June 2024, updates have been to run_perplex.py and interior_model.py to so
 First, please place your mass and radius data for your case studies in the 'MRfiles' folder, and formate them according to the given example file there. 
 [Note: By default, only R will be used as the input and a modelled mass will be generated, which you can compare with your actual data to gauge the modelling accuracy/degeneracy.
 In case that you'd like to use M, instead of R, as the input for the calculation, you should change all calls "Planet" to "M_Planet" in all relevant codes, 
-including mineral_quick_solver.py, mineral_MC_solver_step1.py, and mineral_MC_solver_step2.py, as well as (within the "Ultilities" folder) __init__.py and beautiful_figures.py. 
-But this modification has not been extensively tested. Please report errors if you found any]
+including mineral_quick_solver.py, mineral_MC_solver_step1.py, and mineral_MC_solver_step2.py, as well as (within the "Ultilities" folder) __init__.py and beautiful_figures.py. Where applicable, P.solve_structure shall also be replaced by P.Msolve_structure.
+But the case of using M as the input has not been extensively tested. Please report errors if you found any.]
 
 There are three steps to run the module: 'quick' (i.e. mean mineralogy; mineral_quick_solver.py) -> 'MCstep1' (MC simulation to assess and illustrate the mineralogy uncertainty; mineral_MC_solver_step1.py) -> 'MCstep2' (Illustrate the mineralogy uncertainty; mineral_MC_solver_step2.py). 
 These three steps can be run in sequence (following the order above), manually one by one. You can do so by typing "python3 xxx.py MRfiles/MR_example.csv", for example. 
