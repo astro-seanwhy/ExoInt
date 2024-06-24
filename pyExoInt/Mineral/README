@@ -6,11 +6,16 @@ History:
 """
 The module was co-developed by Fabian L. Seidler and Haiyang S. Wang @ 2021-2022 
 It has been further modified and maintained primarily by Haiyang S. Wang @2022-2023
+
+On 24 June 2024, updates have been to run_perplex.py and interior_model.py to solve some errors reported below. 
 """
 
 ------------------- Running Mineral --------------------
 First, please place your mass and radius data for your case studies in the 'MRfiles' folder, and formate them according to the given example file there. 
-[Please note that only R will be used as the input and a modelled mass will be generated, which you can compare with your actual data to gauge the modelling accuracy/degeneracy]
+[Note: By default, only R will be used as the input and a modelled mass will be generated, which you can compare with your actual data to gauge the modelling accuracy/degeneracy.
+In case that you'd like to use M, instead of R, as the input for the calculation, you should change all calls "Planet" to "M_Planet" in all relevant codes, 
+including mineral_quick_solver.py, mineral_MC_solver_step1.py, and mineral_MC_solver_step2.py, as well as (within the "Ultilities" folder) __init__.py and beautiful_figures.py. 
+But this modification has not been extensively tested. Please report errors if you found any]
 
 There are three steps to run the module: 'quick' (i.e. mean mineralogy; mineral_quick_solver.py) -> 'MCstep1' (MC simulation to assess and illustrate the mineralogy uncertainty; mineral_MC_solver_step1.py) -> 'MCstep2' (Illustrate the mineralogy uncertainty; mineral_MC_solver_step2.py). 
 These three steps can be run in sequence (following the order above), manually one by one. You can do so by typing "python3 xxx.py MRfiles/MR_example.csv", for example. 
@@ -34,20 +39,19 @@ If you would like to run the module on a different system (e.g., MAC or Windows)
 
 
 ---Solutions to Error Reports ---
-The following error has been reported in some cases while running the Mineral codes:
+The following errors have been reported in some cases while running the Mineral codes:
 "pexpect.exceptions.EOF: End Of File (EOF)"
+"path character limit" related errors.
 
-This error has been found to be due to the character limit of the path name set by PerPlex. If this happens to you, two by-pass solutions can be sought:
-(1) Simply put the "Mineral" folder under your home path, e.g., /home/[your username]/Mineral/, which should have avoided the EOF error. But to make this work, you also need to redirect the calling path of the stoichemtric interior compositions (i.e., the first-layer output of pyExoInt) to where the stoichemtric output is located.
-(2) Alterantively (and if preferred), put the whole pyExoInt under your home path, i.e., /home/[your username]/pyExoInt/. This shall solve the EOF error directly. 
+The root-cause of the errors has now been identified due to a mis-use of 'pexpect' in the previous run_perplex.py file. The errors have been eliminated with the recently updated run_perplex.py and interior_model.py. 
 
-A root-cause-solution, native to the setup of PerPlex, remains to be found. You're very welcome to contribute, in case that you have found one and are interested in sharing it. 
+Please report in case you found any further issue.
 
 ---Licence ------
 This program is distributed as free software, under the terms of the GNU Affero General Public License as published by the Free Software Foundation, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-You are also particularly welcome to make full requests and contribute to the further development of the free software. 
+You are also particularly welcome to make pull requests and contribute to the further development of the free software. Please get in touch, if you're interested.
 
 ------------------- Citations ----------------------
 Relevant references for this module: 
@@ -55,4 +59,4 @@ Wang, H. S., Quanz, S. P., Yong, D., Liu, F., Seidler, F., Acuna, L., Mojzsis, S
 Wang, H. S., Lineweaver, C. H., Quanz, S. P., Mojzsis, S. J., Ireland, T. R., Sossi, P. A., Seidler, F., and Morel, T. 2022. A model Earth-sized planet in the habitable zone of α Centauri A/B. ApJ 927:134. https://doi.org/10.3847/1538-4357/ac4e8c
 
 Contact:
-Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular).
+Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@ethz.ch or haiyang.wang@sund.ku.dk (for requests, in particular).
