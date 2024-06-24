@@ -6,6 +6,8 @@ History:
 """
 The module was co-developed by Fabian L. Seidler and Haiyang S. Wang @ 2021-2022 
 It has been further modified and maintained primarily by Haiyang S. Wang @2022-2023
+
+On 24 June 2024, updates have been to run_perplex.py and interior_model.py to solve some errors reported below.
 """
 
 ------------------- Running Mineral --------------------
