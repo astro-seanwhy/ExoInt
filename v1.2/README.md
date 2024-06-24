@@ -31,4 +31,4 @@ The code "exoconstraints.pro" is free to download, use and modify, should it be 
 
 The codes "exomodel.pro" and "chemsysmodel.pro" are free to download and use, but in case of an interest in modifying them (allowed though), it's recommended to first contact the developler, Haiyang S. Wang, to ensure the development consistency.
 
-Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@phys.ethz.ch (for requests, in particular).
+Questions, comments, and suggestions may be raised in the 'Issues' tab, or otherwise directly sent to haiwang@ethz.ch or haiyang.wang@sund.ku.dk (for requests, in particular).
