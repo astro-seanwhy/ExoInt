@@ -11,6 +11,8 @@ It has been further modified and maintained by Haiyang S. Wang @ 2022-2024
 ------------------- Running ExoInt --------------------
 To run pyExoInt, start with 'exoconstraints.py', which calls the function 'exomodel' from 'exomodel.py'. "chemsysmodel" is further called by "exomodel".
 
+To run the mineralogy with the planetary composition as devolatilized from their host stars, please refer to the "Mineral" module enclosed.
+
 ----render stellar abundances------------
 --Please format your stellar abundances to be differential, i.e., [X/H], as the example files (including the header)
 --examplestar1 has symmetric error bars while examplestar2 has asymmetric error bars 
