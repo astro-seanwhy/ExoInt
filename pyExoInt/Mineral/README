@@ -6,8 +6,6 @@ History:
 """
 The module was co-developed by Fabian L. Seidler and Haiyang S. Wang @ 2021-2022 
 It has been further modified and maintained primarily by Haiyang S. Wang @2022-2023
-
-On 24 June 2024, updates have been made to run_perplex.py and interior_model.py to solve some errors reported below. 
 """
 
 ------------------- Running Mineral --------------------
@@ -43,7 +41,8 @@ The following errors have been reported in some cases while running the Mineral 
 "pexpect.exceptions.EOF: End Of File (EOF)"
 "path character limit" related errors.
 
-The root-cause of the errors has now been identified due to a mis-use of 'pexpect' in the previous run_perplex.py file. The errors have been eliminated with the recently updated run_perplex.py and interior_model.py. 
+A temporary solution has been found by placing the "Mineral" module to your home directory (thus to save the path character limit, caused by Perple_X), and then redirect the module's data path to the composition output of pyExoInt (e.g., the-parent-directory-hosting-pyExoInt/pyExoInt/output).
+A radical solution is to be found. Suggestions are welcome.
 
 Please report in case you found any further issue.
 
