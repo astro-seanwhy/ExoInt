@@ -48,6 +48,19 @@ def exomodel(
         stardex, stardexerr, stardexerrdn, refsolar=refsolar
     )
 
+
+    ###output planetary abundances
+    elem_val, abu_val, errup_val, errdn_val = [], [], [], []
+    for elem in elemid:
+        if not np.isnan(planetabuN[elem]):
+            elem_val.append(elem)
+            abu_val.append(planetabuN[elem])
+            errup_val.append(planetabuNerrup[elem])
+            errdn_val.append(planetabuNerrdn[elem])
+            
+    planetabu_df = pandas.DataFrame({'elem': elem_val, 'abu(Al==100)': abu_val, 'err_up': errup_val, 'err_dn': errdn_val})
+    planetabu_df.to_csv(outdir + filename + '_exoE_abundance.txt', sep='\t', index=False)
+    
     #breakpoint()
 
     # ========= MEAN STELLAR ABUNDANCES RESULT =============#
