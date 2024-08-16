@@ -41,7 +41,7 @@ The following errors have been reported in some cases while running the Mineral 
 "pexpect.exceptions.EOF: End Of File (EOF)"
 "path character limit" related errors.
 
-A temporary solution has been found by placing the "Mineral" module to your home directory (thus to save the path character limit, caused by Perple_X), and then redirect the module's data path to the composition output of pyExoInt (e.g., the-parent-directory-hosting-pyExoInt/pyExoInt/output).
+A temporary solution has been found by placing the "Mineral" module to your home directory (thus to save the path character limit, caused by Perple_X), and then redirect the module's data path to the stoichiometric composition output of ExoInt_v1.2 (e.g., the-parent-directory-hosting-ExoInt-v1.2/ExoInt/v1.2/output).
 A radical solution is to be found. Suggestions are welcome.
 
 Please report in case you found any further issue.
