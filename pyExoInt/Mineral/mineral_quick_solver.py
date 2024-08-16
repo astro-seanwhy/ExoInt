@@ -35,7 +35,7 @@ outpath = 'mineral_output/'
 if not os.path.isdir(outpath):
     os.system("mkdir -p "+str(outpath))
     
-datapath = '../output/'  # the data for simulating mineralogy is the stoichiometric output of ExoInt
+datapath = '../output/'  # the data path to the stoichiometric compositional output of pyExoInt; adapt it, if necessary.
 
 MRdata = Table.read(sys.argv[1], format='ascii')
 planet_labels = MRdata['planet'].tolist()
