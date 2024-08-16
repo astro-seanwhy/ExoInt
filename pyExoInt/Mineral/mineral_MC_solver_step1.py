@@ -34,7 +34,7 @@ from contextlib import contextmanager
 import math
 
 #====path setup =====#
-datapath = '../output/' # the data for simulating mineralogy is the stoichiometric output of ExoInt
+datapath = '../output/' # the stoichiometric compositional output of pyExoInt; adapt it, if necessary.
 
 outpath = 'mineral_output/MC_files/'
 if not os.path.isdir(outpath):
