@@ -15,7 +15,7 @@ In case that you'd like to use M, instead of R, as the input for the calculation
 including mineral_quick_solver.py, mineral_MC_solver_step1.py, and mineral_MC_solver_step2.py, as well as (within the "Ultilities" folder) __init__.py and beautiful_figures.py. Where applicable, P.solve_structure shall also be replaced by P.Msolve_structure.
 But the case of using M as the input has not been extensively tested. Please report errors if you found any.]
 
-There are three steps to run the module: 'quick' (i.e. mean mineralogy; mineral_quick_solver.py) -> 'MCstep1' (MC simulation to assess and illustrate the mineralogy uncertainty; mineral_MC_solver_step1.py) -> 'MCstep2' (Illustrate the mineralogy uncertainty; mineral_MC_solver_step2.py). 
+There are three steps to run the module: 'quick' (i.e. mean mineralogy; mineral_quick_solver.py) -> 'MCstep1' (MC simulation to assess the mineralogy uncertainty; mineral_MC_solver_step1.py) -> 'MCstep2' (Illustrate the mineralogy uncertainty; mineral_MC_solver_step2.py). 
 These three steps can be run in sequence (following the order above), manually one by one. You can do so by typing "python3 xxx.py MRfiles/MR_example.csv", for example. 
 They can also be run in streamline, with the code 'mineral_OneGo.py'. You can do so similarly, "python3 xxx.py MRfiles/MR_example.csv". Please refer to "Instructions" embedded in 'mineral_OneGo.py' for further details. 
 [Please note that the codes, including 'mineral_OneGo.py', can also be run within 'ipython3', in which please type "run xxx.py MRfiles/MR_example.csv")
