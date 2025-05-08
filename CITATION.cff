@@ -1,0 +1,11 @@
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Wang
+    given-names: Haiyang S.
+    orcid: https://orcid.org/0000-0001-8618-3343
+title: "ExoInt: Devolatilization and interior modeling package for rocky planets"
+Latest version: 1.2.0
+identifiers:
+  - type: doi
+    value: 10.1093/mnras/sty2749
+date-released: 2019-01-02
