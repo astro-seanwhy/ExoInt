@@ -8,4 +8,8 @@ Latest version: 1.2.0
 identifiers:
   - type: doi
     value: 10.1093/mnras/sty2749
+  - type: emac.gsfc.nasa.gov/
+    value: ?cid=2207-045
+  - type: ascl.net/
+    value: 2504.019
 date-released: 2019-01-02
