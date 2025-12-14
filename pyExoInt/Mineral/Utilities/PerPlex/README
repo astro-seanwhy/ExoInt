@@ -1,7 +1,9 @@
 
 This version of PerPlex is 6.8.9, the binary and data files of which are distributed here under the courtesy of James Connolly. We have compiled it on a Linux system. 
 
-If you would like to use this version of PerPlex on a different system (e.g., MAC or Windows) or adopt any recent versions (particuarly from 6.9.1), please follow the instruction of Perple_x, https://www.perplex.ethz.ch/ , to obtain the relevant files to compile them on your system. We unfortunately cannot offer direct help on compiling Perplex.  
+If you would like to use this version of PerPlex on a different system (e.g., MAC or Windows) or adopt any recent versions (particuarly from 6.9.1), please follow the instruction of Perple_x, https://www.perplex.ethz.ch/ , to obtain the relevant files to compile them on your system. 
+We have included an updated makefile, which has been tested to be compitable with the latest MacOS Tahoe system and Rocky Linux 9.6 (Blue Onyx). 
+We unfortunately cannot offer further help on compiling Perplex.  
 
 The source codes of this version (along with other versions) can be found at https://perplex.ethz.ch/Perple_X_Sources_691/ as well as https://github.com/jadconnolly/Perple_X. Please refer to the GNU General Public License v3.0, as according to https://github.com/ondrolexa/Perple_X, for distributing the source codes. 
 
