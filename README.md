@@ -30,7 +30,7 @@ The use of the programme should have the primary citation given to:
 
 Wang, H. S., Liu, F., Ireland, T., Brasser, R., Yong, D., and Lineweaver, C. H. 2019. Enhanced constraints on the interior composition and structure of terrestrial exoplanets. MNRAS 482:2222-2233. https://doi.org/10.1093/mnras/sty2749 
 
-For using the 'Mineral' module, please refer to the IDL v1.2 version or the pyExoInt for more appropriate citations.
+For using the 'Mineral' module, please refer to the IDL v1.2 version or the python version 'pyExoInt' for more appropriate citations.
 
 ---Contact---
 
